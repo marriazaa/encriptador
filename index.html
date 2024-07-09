@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Encriptador</h1>
+    </header>
+    
+    <main class="main-container">
+        <div class="left-container">
+            <textarea id="inputTexto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="buttons">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="resultado" id="resultado">
+                <img src="muñeco.png" alt="Imagen de encriptado" class="resultado-imagen">
+                <div id="resultadoTexto" class="resultado-texto">Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar.</div>
+                <button id="copiarBtn" class="hidden" onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Desarrollado por marriaza 2024</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

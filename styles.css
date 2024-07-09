@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #f4f4f9;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;    
+    text-align: center;
+}
+
+footer {
+    background-color: #f4f4f9;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.left-container, .right-container {
+    padding: 20px;
+}
+
+.left-container {
+    flex: 1;
+    text-align: center;
+}
+
+.left-container h1 {
+    margin-bottom: 20px;
+}
+
+.left-container textarea {
+    width: 90%;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.right-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.resultado {
+    width: 90%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.resultado-imagen {
+    width: 80%;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.resultado-texto {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    min-height: 150px;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    textarea {
+        height: 60px;
+    }
+}
